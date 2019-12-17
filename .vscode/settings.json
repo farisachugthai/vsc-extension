@@ -1,0 +1,16 @@
+{
+    "workbench.settings.useSplitJSON": true,
+    "[jsonc]": {
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace"
+    },
+    "debug.node.autoAttach": "on",
+    "debug.node.useV3": true,
+    "npm.enableScriptExplorer": true,
+    "debug.extensionHost.useV3": true,
+    "javascript.implicitProjectConfig.experimentalDecorators": true,
+    "javascript.referencesCodeLens.enabled": true,
+    "javascript.referencesCodeLens.showOnAllFunctions": true
+}
