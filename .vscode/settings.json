@@ -12,5 +12,6 @@
     "debug.extensionHost.useV3": true,
     "javascript.implicitProjectConfig.experimentalDecorators": true,
     "javascript.referencesCodeLens.enabled": true,
-    "javascript.referencesCodeLens.showOnAllFunctions": true
+    "javascript.referencesCodeLens.showOnAllFunctions": true,
+    "python.pythonPath": "C:\\Users\\fac\\.virtualenvs\\dynamic_ipython-BYhWmG8z\\Scripts\\python.exe"
 }
