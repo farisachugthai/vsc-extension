@@ -1,57 +1,58 @@
 {
-	"activationEvents": [
-		"onCommand:extension.helloWorld",
-		"onCommand:ipyterminal",
-		"onLanguage:python"
-	],
-	"displayName": "IPython for VSCode",
-	"description": "Integration with IPython, including useful keybindings",
-	"license": "MIT",
-	"author": {
-		"name": "Faris A Chugthai"
-	},
-	"version": "0.0.1",
-	"engines": {
-		"vscode": "^1.41.0"
-	},
-	"categories": [
-		"Other"
-	],
-	"main": "./src/extension.ts",
-	"name": "vscode-practice-extensions",
-	"contributes": {
-		"commands": [
-			{
-				"command": "extension.helloWorld",
-				"title": "Hello World"
-			}
-		]
-	},
-	"devDependencies": {
-		"@types/glob": "^7.1.1",
-		"@types/mocha": "^5.2.7",
-		"@types/node": "^12.12.29",
-		"@types/vscode": "^1.43.0",
-		"glob": "^7.1.5",
-		"gulp": "^4.0.2",
-		"mocha": "^6.2.2",
-		"ts-node": "^8.6.2",
-		"tslint": "^5.20.0",
-		"typescript": "^3.8.3",
-		"vsce": "^1.74.0",
-		"vscode-test": "^1.2.2"
-	},
-	"engineStrict": true,
-	"keywords": [
-		"ipython",
-		"vscode"
-	],
-	"publisher": "Faris A Chugthai",
-	"readme": "README.md",
-	"repository": "todo",
-	"scripts": {
-		"compile": "yarn run tsc -p src",
-		"watch": "yarn run tsc -watch -p src",
-		"test": "node ./out/test/runTest.js"
-	}
+  "activationEvents": [
+    "onCommand:extension.helloWorld",
+    "onCommand:ipyterminal",
+    "onLanguage:python"
+  ],
+  "author": {
+    "name": "Faris A Chugthai"
+  },
+  "categories": [
+    "Other"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.helloWorld",
+        "title": "Hello World"
+      }
+    ]
+  },
+  "description": "Integration with IPython, including useful keybindings",
+  "devDependencies": {
+    "@types/glob": "^7.1.1",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.12.29",
+    "@types/vscode": "^1.43.0",
+    "glob": "^7.1.5",
+    "gulp": "^4.0.2",
+    "mocha": "^6.2.2",
+    "ts-node": "^8.6.2",
+    "tslint": "^6.1.0",
+    "typescript": "^3.8.3",
+    "vsce": "^1.74.0",
+    "vscode-test": "^1.2.2"
+  },
+  "displayName": "IPython for VSCode",
+  "engineStrict": true,
+  "engines": {
+    "vscode": "^1.41.0"
+  },
+  "keywords": [
+    "ipython",
+    "vscode"
+  ],
+  "license": "MIT",
+  "main": "./src/extension.ts",
+  "name": "vscode-practice-extensions",
+  "publisher": "Faris A Chugthai",
+  "readme": "README.md",
+  "repository": "todo",
+  "scripts": {
+    "compile": "yarn run tsc -i --build .",
+    "lint": "yarn tslint --project .",
+    "test": "node ./out/test/runTest.js",
+    "watch": "yarn run tsc --watch -i --build ."
+  },
+  "version": "0.0.1"
 }
