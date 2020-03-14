@@ -1,14 +1,14 @@
 {
-	"name": "hello-world",
-	"displayName": "hello-world",
-	"description": "",
-	"readme": "README.md",
+	"activationEvents": [
+		"onCommand:extension.helloWorld",
+		"onCommand:ipyterminal",
+		"onLanguage:python"
+	],
+	"displayName": "IPython for VSCode",
+	"description": "Integration with IPython, including useful keybindings",
 	"license": "MIT",
 	"author": {
 		"name": "Faris A Chugthai"
-	},
-	"directories": {
-		"lib": "src"
 	},
 	"version": "0.0.1",
 	"engines": {
@@ -17,10 +17,8 @@
 	"categories": [
 		"Other"
 	],
-	"activationEvents": [
-		"onCommand:extension.helloWorld"
-	],
-	"main": "./out/extension.js",
+	"main": "./src/extension.ts",
+	"name": "vscode-practice-extensions",
 	"contributes": {
 		"commands": [
 			{
@@ -29,23 +27,31 @@
 			}
 		]
 	},
-	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
-		"pretest": "npm run compile",
-		"install": "npm install",
-		"test": "node ./out/test/runTest.js"
-	},
 	"devDependencies": {
 		"@types/glob": "^7.1.1",
 		"@types/mocha": "^5.2.7",
-		"@types/node": "^12.11.7",
-		"@types/vscode": "^1.41.0",
+		"@types/node": "^12.12.29",
+		"@types/vscode": "^1.43.0",
 		"glob": "^7.1.5",
+		"gulp": "^4.0.2",
 		"mocha": "^6.2.2",
-		"typescript": "^3.6.4",
+		"ts-node": "^8.6.2",
 		"tslint": "^5.20.0",
+		"typescript": "^3.8.3",
+		"vsce": "^1.74.0",
 		"vscode-test": "^1.2.2"
+	},
+	"engineStrict": true,
+	"keywords": [
+		"ipython",
+		"vscode"
+	],
+	"publisher": "Faris A Chugthai",
+	"readme": "README.md",
+	"repository": "todo",
+	"scripts": {
+		"compile": "yarn run tsc -p src",
+		"watch": "yarn run tsc -watch -p src",
+		"test": "node ./out/test/runTest.js"
 	}
 }
