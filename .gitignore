@@ -6,3 +6,5 @@ tags
 tags.lock
 tags.temp
 *.tsbuildinfo
+.noseids
+test/mocha.js
