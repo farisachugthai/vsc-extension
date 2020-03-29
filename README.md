@@ -1,5 +1,16 @@
 # hello-world README
 
+## YOUR NOTES
+
+I'm adding in some stuff that I deleted out of the package.json.:
+
+```json
+
+"compile": "yarn run tsc -i --build .",
+"watch": "gulp watch --max_old_space_size=4095",
+
+```
+
 This is the README for your extension "hello-world". After writing up a brief
 description, we recommend including the following sections.
 

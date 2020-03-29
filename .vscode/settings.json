@@ -13,5 +13,9 @@
     "javascript.implicitProjectConfig.experimentalDecorators": true,
     "javascript.referencesCodeLens.enabled": true,
     "javascript.referencesCodeLens.showOnAllFunctions": true,
-    "python.pythonPath": "C:\\Users\\fac\\.virtualenvs\\dynamic_ipython-BYhWmG8z\\Scripts\\python.exe"
+    "python.pythonPath": "C:\\Users\\fac\\.virtualenvs\\dynamic_ipython-BYhWmG8z\\Scripts\\python.exe",
+    "npm.packageManager": "yarn",
+    "eslint.packageManager": "yarn",
+    "prettier.packageManager": "yarn",
+    "tslint.packageManager": "yarn"
 }

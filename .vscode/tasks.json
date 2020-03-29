@@ -9,7 +9,13 @@
             "group": {
                 "kind": "build",
                 "isDefault": true
-            }
+            },
+            "label": "npm: compile",
+            "detail": "yarn run tsc -i --build .",
+            "problemMatcher": [
+                "$tsc-watch"
+            ],
+            "isBackground": true
         },
         {
             "type": "npm",
@@ -29,6 +35,34 @@
             "problemMatcher": [
                 "$eslint-stylish"
             ]
-        }
+        },
+        {
+            "type": "npm",
+            "script": "install",
+            "problemMatcher": [],
+            "label": "npm: install",
+            "detail": "install dependencies from package"
+        },
+        {
+            "type": "npm",
+            "script": "watch",
+            "group": "build",
+            "problemMatcher": [],
+            "label": "npm: watch",
+            "detail": "yarn run tsc --watch -i --build ."
+        },
+		{
+			"type": "npm",
+			"script": "watch",
+			"problemMatcher": "$tsc-watch",
+			"isBackground": true,
+			"presentation": {
+				"reveal": "never"
+			},
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
     ]
 }

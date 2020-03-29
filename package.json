@@ -49,10 +49,13 @@
   "readme": "README.md",
   "repository": "todo",
   "scripts": {
-    "compile": "yarn run tsc -i --build .",
     "lint": "yarn tslint --project .",
+    "vscode:prepublish": "yarn tsc --build .",
     "test": "node ./out/test/runTest.js",
-    "watch": "yarn run tsc --watch -i --build ."
+    "watch": "yarn run tsc --build . --watch -i",
+    "run_mocha": "mocha ./test/runTest.js",
+    "7z": "7z",
+    "pretest": "yarn run compile && yarn run lint"
   },
   "version": "0.0.1"
 }
