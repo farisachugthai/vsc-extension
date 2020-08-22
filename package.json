@@ -57,5 +57,8 @@
     "7z": "7z",
     "pretest": "yarn run compile && yarn run lint"
   },
-  "version": "0.0.1"
+  "version": "0.0.1",
+  "dependencies": {
+    "node-gyp": "^6.1.0"
+  }
 }

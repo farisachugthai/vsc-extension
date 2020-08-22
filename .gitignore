@@ -8,3 +8,4 @@ tags.temp
 *.tsbuildinfo
 .noseids
 test/mocha.js
+build

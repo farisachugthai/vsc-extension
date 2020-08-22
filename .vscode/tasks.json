@@ -24,6 +24,7 @@
                 "runOn": "folderOpen"
             },
             "problemMatcher": "$tsc",
+            "label": "tsc file",
             "path": "${file}",
             "group": {
                 "kind": "build",
@@ -31,38 +32,19 @@
             }
         },
         {
-            "type": "eslint",
-            "problemMatcher": [
-                "$eslint-stylish"
-            ]
-        },
-        {
-            "type": "npm",
-            "script": "install",
-            "problemMatcher": [],
-            "label": "npm: install",
-            "detail": "install dependencies from package"
-        },
-        {
             "type": "npm",
             "script": "watch",
-            "group": "build",
-            "problemMatcher": [],
+            "problemMatcher": "$tsc-watch",
+            "isBackground": true,
+            "presentation": {
+                "reveal": "never"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
             "label": "npm: watch",
-            "detail": "yarn run tsc --watch -i --build ."
-        },
-		{
-			"type": "npm",
-			"script": "watch",
-			"problemMatcher": "$tsc-watch",
-			"isBackground": true,
-			"presentation": {
-				"reveal": "never"
-			},
-			"group": {
-				"kind": "build",
-				"isDefault": true
-			}
-		}
+            "detail": "yarn run tsc --build . --watch -i"
+        }
     ]
 }
