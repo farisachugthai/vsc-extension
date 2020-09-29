@@ -1,4 +1,5 @@
 {
+  "private": true,
   "activationEvents": [
     "onCommand:extension.helloWorld",
     "onCommand:ipyterminal",
@@ -28,13 +29,11 @@
     "gulp": "^4.0.2",
     "mocha": "^6.2.2",
     "ts-node": "^8.6.2",
-    "tslint": "^6.1.0",
     "typescript": "^3.8.3",
     "vsce": "^1.74.0",
     "vscode-test": "^1.2.2"
   },
   "displayName": "IPython for VSCode",
-  "engineStrict": true,
   "engines": {
     "vscode": "^1.41.0"
   },
@@ -45,7 +44,6 @@
   "license": "MIT",
   "main": "./src/extension.ts",
   "name": "vscode-practice-extensions",
-  "publisher": "Faris A Chugthai",
   "readme": "README.md",
   "repository": "todo",
   "scripts": {
@@ -55,7 +53,7 @@
     "run_mocha": "mocha ./test/runTest.js",
     "pretest": "yarn build",
     "test": "node ./out/test/runTest.js",
-    "vscode:prepublish": "yarn tsc --build .",
+    "vscode:prepublish": "yarn build",
     "watch": "yarn run tsc --build . --watch -i"
   },
   "version": "0.0.1",

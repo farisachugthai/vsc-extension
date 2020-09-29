@@ -1,9 +1,20 @@
 // http://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html
+
+// So I tried adding a JSDoc comment from:
+// https://www.typescriptlang.org/play?useJavaScript=truee=4#example/jsdoc-support
+// For some reason the snippet works awesome but it's getting marked as
+// a problem in VSCode?
+
+/**
+ * Say hello a person
+ * @param {string} person Person to say hello to
+ */
 function greeter(person : string) {
     return "Hello, " + person;
 }
 
-let user = "Jane User";
+/** @type: string */
+let user: string = "Jane User";
 
 document.body.textContent = greeter(user);
 
